@@ -1,0 +1,20 @@
+# Ignore IDE and OS-files
+.DS_store
+.notes/
+/nbproject*
+
+# Ignore configuration files that may contain sensitive information.
+sites/*/settings*.php
+
+# Ignore paths that contain user-generated content.
+sites/*/files
+sites/*/private
+
+# Ignore themes and modules for development only
+sites/all/themes/html5_base
+sites/all/modules/contrib/coder
+sites/all/modules/contrib/devel
+sites/all/modules/contrib/devel_themer
+sites/all/modules/development
+sites/all/libraries/FirePHPCore/
+sites/all/themes/_*
