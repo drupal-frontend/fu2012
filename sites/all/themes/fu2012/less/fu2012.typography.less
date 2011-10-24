@@ -16,13 +16,38 @@ p {
   margin-bottom: @parapgraph-space;
 }
 
+input, textarea {
+  font-size: @font-size-base;
+}
+
 // Site name
-.site-name a {
-  font-family: @font-lgt-fam;
-  font-weight: @font-lgt-wgt;
-  font-size: @font-size-h2;
-  text-transform: uppercase;
+.site-name {
+  font-family: @font-hvy-fam;
+  font-weight: @font-hvy-wgt;
+  font-size: 90px;
+  line-height: 1em;
+  padding: 0 @default-spacing;
   text-decoration: none;
+
+  a:link,
+  a:visited {
+    color: @color-text-primary;
+    border: none;
+  }
+  
+  h2 {
+    margin: 0;
+  }  
+
+  strong {
+    color: @color-negative;
+  }
+  
+  span {
+    .block-title;
+    display: block;
+    margin-top: 1.5 * @default-spacing;
+  }
 }
 
 // Page title
@@ -37,11 +62,12 @@ p {
 // Block titles
 .block-title, .field-label {
   font-size: @font-size-h2;
-  font-family: @font-lgt-fam;
-  font-weight: @font-lgt-wgt;
+  font-family: @font-hvy-fam;
+  font-weight: @font-hvy-wgt;
   text-transform: uppercase;
-  line-height: 1.2em;
+  line-height: 1em;
   font-weight: normal;
+  color: @color-text-80;
 }
 
 // Content headings H2
@@ -56,6 +82,23 @@ p {
   font-family: @font-hvy-fam;
   font-weight: @font-hvy-fam;
   font-size: @font-size-h3;
+}
+
+
+// Homepage callout
+.callout {
+  color: @color-text-90;
+  font-family: @font-lgt-fam;
+  font-size: @font-size-h3;
+  font-weight: @font-lgt-wgt;
+  line-height: 1.2em;
+  padding: 52px @default-spacing 0;
+  width: 58.333%;
+  
+  em {
+    font-style: normal;
+    color: @color-negative;
+  }
 }
 
 // Formatting text content

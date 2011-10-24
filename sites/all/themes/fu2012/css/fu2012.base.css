@@ -16,3 +16,7 @@ ul.action-links li a{padding-left:15px;background:url(../images/add.png) no-repe
 .messages{padding:20px 0 5px;margin:0 auto;clear:both;}
 .featured #messages{background:#f0f0f0;background:rgba(30, 50, 10, 0.08);}
 div.messages{margin:8px 15px;}
+.topbar{background:#fff;}.topbar a{display:block;float:left;padding:16px;}
+.topbar .active{background:#000000;color:#ffffff;}.topbar .active:hover{background:#c76533;}
+.zone-branding{padding-top:52px;}
+.site-logo{float:right;width:32.9787234%;}.site-logo a{border:none;}
