@@ -2,38 +2,44 @@
 @import 'fu2012.variables.less';
 @import 'fu2012.mixins.less';
 
-/* !----- / Developer ----- */
-// Developer and temporary styling goes here. 
-// Refactor and move before going into production.
-
 img, video, object, embed {
   max-width: 100%;
 }
 
-/* ! Menus */
+/* !----- / Styles ----- */
+.style-alternative {
+  background: @color-background-alternative;
+}
+
+
+/* !----- / Sections ----- */
+
+
+
+/* !----- / Zones ----- */
+.zone-header {
+  padding-top: @default-spacing;
+  padding-bottom: @default-spacing;
+}
+
+
+/* !----- / Regions ----- */
+
+
+
+/* !----- / Blocks ----- */
+.block {
+  padding: @default-spacing;
+}
+
+
+/* !----- / Menus ----- */
 // Replace styling from unset system.menus.css.
 ul.menu {
   border: none;
   list-style: none;
 }
 
-// Default (vertical) menu styling
-ul {
-  .expanded   {  }
-  .collapsed  {  }
-  .leaf       {  }
-  
-  &.inline,
-  &.links.inline {
-  }
-  
-  &.inline li {
-  }
-  
-  &.inline > li > a {
-  }
-} // ul 
- 
 // Horizontal menus
 .horizontal {
   .leaf,
@@ -54,7 +60,7 @@ ul {
   color: blue;
 }
 
-/* ! System Tabs */
+/* !----- / System Tabs ----- */
 // @todo Move to external library
 
 .tabs {
@@ -143,7 +149,8 @@ ul.action-links {
   }
 } //ul.action-links
 
-/* ! Messages */
+
+/* !----- / Messages ----- */
 // @todo Move to external library
 
 .messages {
@@ -158,6 +165,7 @@ ul.action-links {
 div.messages {
   margin: 8px 15px;
 }
+
 
 /* !----- / Main menu ----- */
 .topbar {

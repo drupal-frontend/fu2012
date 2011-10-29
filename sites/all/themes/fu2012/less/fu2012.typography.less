@@ -60,13 +60,13 @@ input, textarea {
 }
 
 // Block titles
-.block-title, .field-label {
+.block-title {
   font-size: @font-size-h2;
   font-family: @font-hvy-fam;
   font-weight: @font-hvy-wgt;
   text-transform: uppercase;
+  letter-spacing: 0.03125em; //1/32px;
   line-height: 1em;
-  font-weight: normal;
   color: @color-text-80;
 }
 
@@ -162,6 +162,15 @@ a {
   }
 }
 
+// Alternative styling
+.style-alternative {
+  color: @color-negative;
+  
+  .block-title {
+    color: @color-negative;
+  }
+}
+
 // Removed underlining on main menu
 .region-menu a {
   border-bottom: none;
@@ -190,4 +199,12 @@ button {
   font-family: @font-hvy-fam;
   font-weight: @font-hvy-wgt;
   text-transform: uppercase;
+}
+
+// Mailchimp
+.block-mailchimp-lists {
+  .block-title {
+    background: transparent url(../images/fu2012-sprites.png) no-repeat 0px -772px;
+    padding-left: 50px;
+  }
 }
