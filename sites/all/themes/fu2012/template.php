@@ -87,3 +87,12 @@ function fu2012_menu_link(array $variables) {
     return '<li' . drupal_attributes($element['#attributes']) . '>' . $output . $sub_menu . "</li>\n";
   }
 }
+
+/**
+ * Implements hook_form_FORMID_alter().
+ * Removes duplicate label.
+ */
+function fu2012_form_mailchimp_lists_user_subscribe_form_1_alter(&$form) {
+  // Label duplicates block title, remove it.
+  unset($form['mailchimp_lists']['mailchimp_1']['title']['#title']);
+}
