@@ -12,7 +12,8 @@ body {
   font-size: @font-size-base;
 }
 
-p {
+p,
+.basetext {
   margin-bottom: @parapgraph-space;
 }
 
@@ -67,6 +68,7 @@ input, textarea {
   text-transform: uppercase;
   letter-spacing: 0.03125em; //1/32px;
   line-height: 1em;
+  margin-bottom: 0.8em;
   color: @color-text-80;
 }
 
@@ -94,6 +96,7 @@ input, textarea {
   line-height: 1.2em;
   padding: 52px @default-spacing 0;
   width: 58.333%;
+  margin-bottom: 2.5em;
   
   em {
     font-style: normal;
@@ -194,17 +197,37 @@ a {
 }
 
 // Forms
+.form-item {
+  margin: 0.5em 0;
+  
+  label {
+    width: 130px;
+    display: inline-block;
+    font-weight: bold;
+  }
+  .description {
+    .basetext;
+  }
+  
+}
+
 input[type=submit],
 button {
-  font-family: @font-hvy-fam;
-  font-weight: @font-hvy-wgt;
+  font-family: @font-std-fam;
+  font-weight: @font-std-wgt;
+  font-size: @font-size-base;
   text-transform: uppercase;
 }
+
+
 
 // Mailchimp
 .block-mailchimp-lists {
   .block-title {
     background: transparent url(../images/fu2012-sprites.png) no-repeat 0px -772px;
     padding-left: 50px;
+  }
+  .mailchimp-newsletter-wrapper {
+    margin-bottom: 1em;
   }
 }

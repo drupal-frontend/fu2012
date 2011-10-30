@@ -1,0 +1,3 @@
+[submodule "sites/all/libraries/less_libraries"]
+	path = sites/all/libraries/less_libraries
+	url = git@github.com:aakb/less_libraries.git
