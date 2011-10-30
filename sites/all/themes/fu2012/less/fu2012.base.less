@@ -26,6 +26,13 @@ img, video, object, embed {
   padding-bottom: @default-spacing;
 }
 
+html .zone-postscript {
+  margin-top: 20px;
+}
+
+html .zone-footer {
+  margin-top: 40px;
+}
 
 /* !----- / Regions ----- */
 
@@ -36,6 +43,11 @@ img, video, object, embed {
   padding: @default-spacing;
 }
 
+.block-secondary {
+  background: @color-orange-light;
+  overflow: hidden;
+  padding: @default-spacing 0;
+}
 
 /* !----- / Menus ----- */
 // Replace styling from unset system.menus.css.
@@ -175,20 +187,34 @@ div.messages {
 .topbar {
   background: #fff;
   
-  
   a {
     display: block;
     float: left;
     padding: @default-spacing;
-  }
-  .active {
-    background: @color-negative;
-    color: @color-text-primary;
   
+    &:link,
+    &:visited {
+      color: #000;
+    }
+  
+    &.active {
+      background: @color-negative;
+      color: @color-text-primary;
+      
+      &[href^='/#'] {
+        background: #fff;
+        color: #000;
+      }
+      &:hover {
+        background: @color-background;
+        color: @color-text-primary;
+      }
+    }
     &:hover {
       background: @color-background;
+      color: @color-text-primary;
     }
-  }
+  }  
 }
 
 

@@ -4,7 +4,10 @@ input[type=submit]:hover{cursor:pointer;background:#D28F3E;}
 img,video,object,embed{max-width:100%;}
 .style-alternative{background:#ffffff;}
 .zone-header{padding-top:16px;padding-bottom:16px;}
+html .zone-postscript{margin-top:20px;}
+html .zone-footer{margin-top:40px;}
 .block{padding:16px;}
+.block-secondary{background:#d2845c;overflow:hidden;padding:16px 0;}
 ul.menu{border:none;list-style:none;}
 .horizontal .leaf,.horizontal .expanded,.horizontal .collapsed{display:inline-block;}
 .expanded,.collapsed,.leaf{padding:0;margin:0;}
@@ -22,7 +25,9 @@ ul.action-links li a{padding-left:15px;background:url(../images/add.png) no-repe
 .messages{padding:20px 0 5px;margin:0 auto;clear:both;}
 .featured #messages{background:#f0f0f0;background:rgba(30, 50, 10, 0.08);}
 div.messages{margin:8px 15px;}
-.topbar{background:#fff;}.topbar a{display:block;float:left;padding:16px;}
-.topbar .active{background:#000000;color:#ffffff;}.topbar .active:hover{background:#c76533;}
+.topbar{background:#fff;}.topbar a{display:block;float:left;padding:16px;}.topbar a:link,.topbar a:visited{color:#000;}
+.topbar a.active{background:#000000;color:#ffffff;}.topbar a.active[href^='/#']{background:#fff;color:#000;}
+.topbar a.active:hover{background:#c76533;color:#ffffff;}
+.topbar a:hover{background:#c76533;color:#ffffff;}
 .zone-branding{padding-top:52px;}
 .site-logo{float:right;width:32.9787234%;}.site-logo a{border:none;}

@@ -12,9 +12,18 @@ body {
   font-size: @font-size-base;
 }
 
+.bold {
+  font-weight: 600;
+}
+
 p,
 .basetext {
   margin-bottom: @parapgraph-space;
+}
+
+em {
+  .bold;
+   font-style: normal;
 }
 
 input, textarea {
@@ -48,6 +57,7 @@ input, textarea {
     .block-title;
     display: block;
     margin-top: 1.5 * @default-spacing;
+    color: @color-text-80;
   }
 }
 
@@ -69,7 +79,7 @@ input, textarea {
   letter-spacing: 0.03125em; //1/32px;
   line-height: 1em;
   margin-bottom: 0.8em;
-  color: @color-text-80;
+  
 }
 
 // Content headings H2
@@ -106,7 +116,6 @@ input, textarea {
 
 // Formatting text content
 .text-content {
-
   ul {
     margin-left: 20px;
     list-style: square;
@@ -174,6 +183,25 @@ a {
   }
 }
 
+// Text styles
+.secondary {
+  color: @color-text-50;
+}
+
+.info {
+  a:link,
+  a:visited {
+    color: inherit;
+    border: none;
+    margin-bottom: 0;
+  }
+  a:hover,
+  a:active {
+    border-bottom: 1px dotted #fff;
+    margin-bottom: -1px;
+  }
+}
+
 // Removed underlining on main menu
 .region-menu a {
   border-bottom: none;
@@ -203,7 +231,7 @@ a {
   label {
     width: 130px;
     display: inline-block;
-    font-weight: bold;
+    .bold;
   }
   .description {
     .basetext;
@@ -229,5 +257,13 @@ button {
   }
   .mailchimp-newsletter-wrapper {
     margin-bottom: 1em;
+  }
+}
+
+// Twitter block
+.block-block-2 {
+  .block-title {
+     background: transparent url(../images/fu2012-sprites.png) no-repeat -54px -729px;
+     padding-left: 50px;
   }
 }
