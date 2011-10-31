@@ -3,9 +3,9 @@ input[type=submit]{border:none;background:#c16131;padding:8px 16px;color:#fff;ma
 input[type=submit]:hover{cursor:pointer;background:#D28F3E;}
 img,video,object,embed{max-width:100%;}
 .style-alternative{background:#ffffff;}
-.zone-branding-wrapper{background:transparent url(../images/lego-white.png) 95% 400px no-repeat;background-attachment:fixed;}
+.zone-branding-wrapper{background:transparent url(../images/lego-white.png) 95% 300px no-repeat;background-attachment:fixed;}
 .zone-header{padding-top:16px;padding-bottom:16px;}
-.zone-header-wrapper{background:#ffffff url(../images/lego-orange.png) 95% 400px no-repeat;background-attachment:fixed;}
+.zone-header-wrapper{background:#ffffff url(../images/lego-orange.png) 95% 300px no-repeat;background-attachment:fixed;}
 html .zone-postscript{margin-top:20px;}
 html .zone-footer{margin-top:40px;}
 .block{padding:16px;}
