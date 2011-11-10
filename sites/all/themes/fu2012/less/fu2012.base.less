@@ -17,11 +17,25 @@ img, video, object, embed {
 
 
 /* !----- / Sections ----- */
+.section-content {
+  padding-bottom: 2 * @default-spacing;
+  padding-top: 2 * @default-spacing;
+  border-top: 1px solid @color-orange-light;
+  border-bottom: 1px solid @color-orange-light;
+}
 
+.section-footer {
+  background: @color-orange-light;
+  background: @color-orange-light-rgba;
+}
+
+.front .section-footer {
+  background: transparent;
+}
 
 
 /* !----- / Zones ----- */
-.zone-branding-wrapper {
+.front .zone-branding-wrapper {
   background: transparent url(../images/lego-white.png) 95% 300px no-repeat;
   background-attachment: fixed;
 }
@@ -31,18 +45,43 @@ img, video, object, embed {
   padding-bottom: @default-spacing;
 }
 
-.zone-header-wrapper {
+.front .zone-header-wrapper {
   background: #fff url(../images/lego-orange.png) 95% 300px no-repeat;
   background-attachment: fixed;
 }
 
 html .zone-postscript {
-  margin-top: 20px;
+  padding-top: 20px;
+}
+
+.zone-postscript-wrapper {
+  border-bottom: 1px solid @color-orange-light;
 }
 
 html .zone-footer {
   margin-top: 40px;
 }
+
+.zone-branding {
+  padding-top: 22px;
+}
+
+.front .zone-branding {
+  padding-top: 52px;
+}
+
+
+// Move background image when toolbar is active
+.toolbar.front .zone-branding-wrapper,
+.toolbar.front .zone-header-wrapper {
+  background-position: 95% 330px;
+}
+
+.toolbar.toolbar-drawer.front .zone-branding-wrapper,
+.toolbar.toolbar-drawer.front .zone-header-wrapper {
+  background-position: 95% 365px;
+}
+
 
 /* !----- / Regions ----- */
 
@@ -55,8 +94,8 @@ html .zone-footer {
 
 .block-secondary {
   background: @color-orange-light;
+  background: @color-orange-light-rgba;
   overflow: hidden;
-  padding: @default-spacing 0;
 }
 
 /* !----- / Menus ----- */
@@ -90,8 +129,6 @@ ul.menu {
 // @todo Move to external library
 
 .tabs {
-  margin-bottom: 20px;
-
   ul.primary {
     padding: 0 3px;
     margin: 0;
@@ -229,10 +266,6 @@ div.messages {
 
 
 /* !----- / Logo ----- */
-.zone-branding {
-  padding-top: 52px;
-}
-
 .site-logo {
   float: right;
   width: 32.9787234%; // 310/940px;

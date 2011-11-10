@@ -34,7 +34,7 @@ input, textarea {
 .site-name {
   font-family: @font-hvy-fam;
   font-weight: @font-hvy-wgt;
-  font-size: 90px;
+  font-size: 4em;
   line-height: 1em;
   padding: 0 @default-spacing;
   text-decoration: none;
@@ -56,8 +56,16 @@ input, textarea {
   span {
     .block-title;
     display: block;
-    margin-top: 1.5 * @default-spacing;
+    margin-top: @default-spacing;
     color: @color-text-80;
+  }
+}
+
+.front .site-name {
+  font-size: 6.428571429em;
+  
+    span {
+    margin-top: 1.5 * @default-spacing;
   }
 }
 
@@ -68,6 +76,7 @@ input, textarea {
   text-transform: uppercase;
   font-size: @font-size-title;
   line-height: 1.2em;
+  padding: 0 @default-spacing;
 }
 
 // Block titles
